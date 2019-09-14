@@ -48,5 +48,6 @@ def checkout(cart, coupons)
   final_cart = apply_clearance(discount_cart)
   final_cart.each do |item, attributes|
     total = total += attributes[:price]
+  end
   total
 end
